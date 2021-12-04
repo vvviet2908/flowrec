@@ -183,7 +183,6 @@ class EvaluationVisualizer(BaseListener):
         memory_time = {}
 
         plt.ion()
-        plt.subplot()
         self.fig = plt.figure(figsize=(12, 9.5))
         self.fig.suptitle(self.dataset_name)
         plot_metrics = [m for m in self.metrics if m not in [constants.RUNNING_TIME, constants.MODEL_SIZE]]
@@ -511,7 +510,7 @@ class EvaluationVisualizer(BaseListener):
 
     @staticmethod
     def hold():
-        plt.show()
+        plt.show(block=True)
 
 
 class PlotDataTracker(object):
