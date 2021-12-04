@@ -1,3 +1,6 @@
+%matplotlib notebook
+%matplotlib inline
+
 import warnings
 import time
 from skmultiflow.visualization.base_listener import BaseListener
