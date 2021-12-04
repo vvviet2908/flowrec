@@ -8,7 +8,7 @@ from skmultiflow.trees import HATT
 from utils.shared_data import SharedData as Data
 
 
-class HTWrapper(BaseSKMObject, ClassifierMixin):
+class EFDTWrapper(BaseSKMObject, ClassifierMixin):
     """Wrapper for the Hoeffding Tree learner of Scikit-Multiflow
     Notes
     ----------
