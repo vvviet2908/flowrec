@@ -1,6 +1,3 @@
-%matplotlib notebook
-%matplotlib inline
-
 import warnings
 import time
 from skmultiflow.visualization.base_listener import BaseListener
@@ -465,6 +462,7 @@ class EvaluationVisualizer(BaseListener):
         if constants.RUNNING_TIME in self.metrics or \
                 constants.MODEL_SIZE in self.metrics:
             self._update_time_and_memory_annotations(memory_time)
+        plt.show()
 
     def _clear_annotations(self):
         """ Clear annotations, so next frame is correctly rendered. """
