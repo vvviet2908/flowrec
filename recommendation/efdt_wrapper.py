@@ -31,7 +31,7 @@ class EFDTWrapper(BaseSKMObject, ClassifierMixin):
     """
 
     def __init__(self,
-                 estimator=HATT(leaf_prediction='nb'),
+                 estimator=HATT(leaf_prediction='nba'),
                  weight_mc=10,
                  weight_inv=0.3,
                  max_session_size=20
